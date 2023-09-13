@@ -1,0 +1,63 @@
+spring:
+  redis:
+    host:  localhost
+    port: 6379
+    password: Rrdispwd597d9f972f991a8c1!
+    lettuce:
+      pool:
+        min-idle: 1 #连接池最小空闲连接
+        max-wait: 1000 #连接池最大阻塞等待时间，为负数则没有限制
+        shutdown-timeout: 100 #关闭超时时间
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # rabbitmq配置
+  rabbitmq:
+    # 用户名
+    username: guest
+    # 密码
+    password: guest
+    # 服务器地址
+    host: 192.168.10.100
+    # 端口
+    port: 5672
+
+mybatis-plus:
+  #配置Mapper映射文件
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: true
+
+
+
+#公钥
+public:
+  key: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSZxb0yH48daZ26E6XnP9\
+    vBCWyAvhAQJwNsnGH0cS0u9+Up3YS0hjIXSE3qP9CkGS6jd6Qb21ZxlUDP6\
+    qv2u2KDTMHZkDB8irY91q4wkwsrOYx79VEUjeG+hoezfShxwTz/sD3GarOn\
+    Kgrnq/9T6M+3huVeSmBhMHC7o953VsTcQIDAQAB"
+jwt:
+  token_header: Authorization
+  primary_key: abcdefghijklmnopqrstuvwxyz # token private key
+  IIS: YangYu
+  access_token_validity: 9000 #3600 # 1 hour
+  refresh_token_validity: 36000 #604800 # 7 days
+#私钥
+private:
+  key: "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJJnFvTIfjx1pnboTpec/28EJbIC\
+    +EBAnA2ycYfRxLS735SndhLSGMhdITeo/0KQZLqN3pBvbVnGVQM/qq/a7YoNMwdmQMHyKtj3WrjC\
+    TCys5jHv1URSN4b6Gh7N9KHHBPP+wPcZqs6cqCuer/1Poz7eG5V5KYGEwcLuj3ndWxNxAgMBAAEC\
+    gYAp6PsIXfDNS/y4Y25ENrxkwnIsEG+SrSw/O4sGj4VZG8M4YewKHTzc9tQQg/92xbEgOoaxIETU\
+    g1NI18v8BZckE1d1zjK18q//h/aqfqe42SIfyQqtBL8rVKfSVGqgVPotcmcGovkGd7nXX2QkoXE8\
+    jDtLCtTN0Z83ByWcf4PmFQJBANpmpGs0vGkChnE41besYqyZRN7gt/u2FlXwMQMnIwGYBio137DB\
+    Ctqvn3UxbJp8VY5t2csbbnsg9GX3YtWimcsCQQCrm1fkRA+dPoG1w/k19XKT2QmRrdLZ6FafPFmr\
+    Pd4vSutIyAtqZDY7VAZB3x6K9mODLaQEZ5sr1iaw68SY1VAzAkAWpBFjc8IceMCLOEMfmWVZU0JK\
+    gK1SENxb6FyMYSBF6AarlY4s+rYvWYmEUq1Zjo4oB8dOQPfBF/d+IplCYGrlAkEAjh9wsk8f82Xi\
+    PSyaB/NIumPkxe8FEo2Wt/hedzEdA2Pz6uoqcimetJIJQKLOA969WdYB4dgArlSE5L/OqZj4+wJA\
+    EnJwdOH+IRtTOtK9+ECIghbbiKi6j5cwDR1ZsR0uaktPbafveaNiWvbXMLR7C/o3hDLYBFwXKIvU\
+    DmNEHGz2XQ=="

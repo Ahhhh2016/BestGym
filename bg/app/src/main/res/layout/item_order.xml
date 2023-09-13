@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:id="@+id/check_box"
+            style="@style/RedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp" />
+
+        <com.student.student_base_project.RoundedImage.RoundedImageView
+            android:src="@mipmap/banner3"
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/margin_size_15"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="@dimen/margin_size_15"
+            android:scaleType="fitXY"
+            app:riv_corner_radius_bottom_left="5dp"
+            app:riv_corner_radius_bottom_right="5dp"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="5dp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_size_15"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_alias_name"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_marginTop="@dimen/margin_size_15"
+                android:textSize="@dimen/text_size_28"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_size_15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/text_size_28"
+                    android:text="￥32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_size_15"
+            android:layout_marginRight="@dimen/margin_size_15"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tv_minus"
+                android:src="@mipmap/icon_miuns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="@color/text_2a"
+                android:textSize="@dimen/text_size_24"></EditText>
+
+            <ImageView
+                android:id="@+id/tv_plus"
+                android:src="@mipmap/icon_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+</LinearLayout>

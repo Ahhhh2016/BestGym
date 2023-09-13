@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_base_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:background="@drawable/tv_red_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:text="Book detail"
+            android:textColor="@color/color_0c"
+            android:textSize="@dimen/text_size_28"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Book course"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="Boxing"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Book time"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="2022.02.12 17：00~18:00"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Book person"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Tutor"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="None"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Note"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="None"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <CheckBox
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/check_box"
+        android:text="Continuous Weeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/color_0c"
+            android:text="Sum up:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="@dimen/margin_size_15"
+            android:id="@+id/tv_price"
+            android:layout_marginLeft="@dimen/margin_size_30"
+            android:textColor="@color/color_0c"
+            android:text="Nill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:background="@drawable/tv_red_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:text="Payment method"
+            android:textColor="@color/color_0c"
+            android:textSize="@dimen/text_size_28"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_cards"
+            android:textColor="@color/color_0c"
+            android:text="cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_cash"
+            android:textColor="@color/color_0c"
+            android:text="cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_marginRight="@dimen/margin_size_15"
+        android:layout_marginLeft="@dimen/margin_size_15"
+        android:layout_marginTop="@dimen/margin_size_40"
+        android:gravity="center"
+        android:text="Ensure book"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_ddd_25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

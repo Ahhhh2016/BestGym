@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_mydialog_style"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:background="@drawable/tv_red_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:text="mode of payment"
+            android:textColor="@color/color_0c"
+            android:textSize="@dimen/text_size_28"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_card_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_size_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/margin_size_15"
+        android:background="@null"
+        android:enabled="false"
+        android:hint="cash payment"
+        android:inputType="number"
+        android:text="cash payment"
+        android:textColor="@color/color_0c"
+        android:textColorHint="@color/text_d2"
+        android:textSize="@dimen/text_size_32"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_size_10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/dianzishouju" />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yijingzhifu" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yijingzhifu" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_yijingzhifu" />
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yijingzhifu" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yijingzhifu" />
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yijingzhifu" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_size_15"
+        android:layout_marginTop="@dimen/margin_size_40"
+        android:layout_marginRight="@dimen/margin_size_15"
+        android:background="@drawable/shape_ddd_25dp"
+        android:gravity="center"
+        android:text="Confirm"
+        android:textColor="@color/white" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

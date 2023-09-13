@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_base_title" android:id="@+id/title_layout"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@+id/title_layout"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_size_5"
+        android:background="#9997a7a7"
+        android:paddingRight="@dimen/margin_size_5">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            style="@style/RedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/all_select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="：￥0.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+
+        <Button
+            android:id="@+id/btn_settlement"
+            style="@style/ButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/tv_red_bg"
+            android:text="@string/go_settlement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+
+    </LinearLayout>
+
+</RelativeLayout>

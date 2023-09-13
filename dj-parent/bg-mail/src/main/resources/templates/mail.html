@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt from BestGYM</title>
+</head>
+<body>
+
+Hi <span th:text="${name}"></span>, here is your receipt:
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td th:text="${name}"></td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td th:text="${date}"></td>
+    </tr>
+<!--    <tr>-->
+<!--        <td>Time</td>-->
+<!--        <td th:text="${time}"></td>-->
+<!--    </tr>-->
+    <tr>
+        <td>Price</td>
+        <td th:text="${price}"></td>
+    </tr>
+</table>
+
+<p>Thanks!</p>
+</body>
+</html>

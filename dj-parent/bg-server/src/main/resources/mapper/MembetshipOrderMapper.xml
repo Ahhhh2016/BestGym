@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.MembershipOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.MembershipOrder">
+        <id column="id" property="id" />
+        <result column="membershipType" property="membershipType" />
+        <result column="paymentMoney" property="paymentMoney" />
+        <result column="userId" property="userId" />
+        <result column="paymentDate" property="paymentDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, membershipType, paymentMoney, userId, paymentDate
+    </sql>
+
+</mapper>

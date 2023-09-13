@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.TimetableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.Timetable">
+        <id column="id" property="id" />
+        <result column="facilityId" property="facilityid" />
+        <result column="day" property="day" />
+        <result column="eight" property="eight" />
+        <result column="ten" property="ten" />
+        <result column="fourteen" property="fourteen" />
+        <result column="sixteen" property="sixteen" />
+        <result column="twenty" property="twenty" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, facilityId, day, eight, ten, fourteen, sixteen, twenty
+    </sql>
+
+</mapper>

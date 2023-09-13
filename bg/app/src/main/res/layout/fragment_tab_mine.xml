@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_base_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/margin_size_30"
+            android:layout_marginRight="@dimen/margin_size_15"
+            android:layout_marginLeft="@dimen/margin_size_15"
+            android:background="@drawable/shape_gradient_splash_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/bg_oval_avatar"
+            android:layout_width="60dp"
+            android:orientation="vertical"
+            android:layout_height="60dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@mipmap/icon_liwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_below="@id/layout_container"
+            android:layout_centerHorizontal="true"
+            android:textColor="#f9e3d5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="BESTGYM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="@dimen/margin_size_35"
+            android:paddingLeft="@dimen/margin_size_35"
+            android:background="@drawable/shape_gradient_splash_bg3"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_0c"
+            android:textSize="@dimen/text_size_24"
+            android:layout_marginTop="@dimen/margin_size_30"
+            android:text="activated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_card_list"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_size_15"
+        android:layout_marginLeft="@dimen/margin_size_15"
+        android:background="@drawable/tv_red_bg_filter_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_size_15"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/bg_oval_avatar"
+            android:layout_width="40dp"
+            android:orientation="vertical"
+            android:layout_height="40dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@mipmap/icon_ka"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Card item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_size_20"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_size_15"
+        android:layout_marginLeft="@dimen/margin_size_15"
+        android:background="@drawable/tv_red_bg_filter_normal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_mybook"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/book"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="MyBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutBank"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/record"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Bank List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_subscribe_list"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/record"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:id="@+id/layout_vip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/vip"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="VIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:id="@+id/layout_notice"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/notice"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/layout_info"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/info"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:id="@+id/layout_logout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_size_15"
+                android:src="@mipmap/logout"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/margin_size_5"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
